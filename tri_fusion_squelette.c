@@ -43,7 +43,7 @@ liste* fusion(liste *l1, liste *l2)
 
 }
 
-liste *tri_fusion(liste *l)
+liste* tri_fusion(liste *l)
 {
   //algorithme de tri fusion qui sépare la liste en deux, tri récursivement chacune des listes et les fusionne
 
