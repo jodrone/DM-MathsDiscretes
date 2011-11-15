@@ -13,12 +13,21 @@ typedef struct t_liste
 
 liste *initialiser(double r, liste *l)
 {
-  //initialise la liste chaînée 
+  //initialise la liste chaînée, vide par défaut
+  liste listeTemporaire;
+  listeTemporaire.suivant = NULL;
 
 }
 
 void afficher(liste *l)
 {
+  liste *prout;
+  prout = l;
+  while (prout != NULL)
+  {
+	printf("Valeur : %d",l->valeur);
+	prout = prout->suivant;
+  }
   //affiche le contenu d'une liste
 
 }
@@ -45,7 +54,20 @@ liste* fusion(liste *l1, liste *l2)
 
 liste* tri_fusion(liste *l)
 {
+  /*
   //algorithme de tri fusion qui sépare la liste en deux, tri récursivement chacune des listes et les fusionne
+  liste liste2;
+  
+  //liste2 = initialise(
+
+  liste2 = separation(liste);
+  
+  liste = tri_fusion(liste);
+  liste2 = tri_fusion(liste2);
+
+
+  return fusion(liste1,liste2);
+  */	
 
 }
 
@@ -59,7 +81,7 @@ int main (int argc, char *argv[])
   //heure avant le calcul
   t1 = clock();
   //le calcul dont on veut mesurer le temps
-
+  //liste2 = tri_fusion(liste);
   //heure après le calcul
   t2 = clock();
   (void)printf("Nb ticks/seconde = %ld,  Nb ticks depart : %ld, "
