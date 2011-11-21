@@ -4,6 +4,7 @@
 #include <string.h>
 #include <time.h>
 
+
 typedef struct t_liste
 {
   int valeur;
@@ -13,7 +14,7 @@ typedef struct t_liste
 
 liste *initialiser(double r, liste *l)
 {
-  //initialise la liste chaînée, vide par défaut
+  //initialise la liste chaï¿½nï¿½e, vide par dï¿½faut
   liste listeTemporaire;
   listeTemporaire.suivant = NULL;
 
@@ -34,28 +35,28 @@ void afficher(liste *l)
 
 void supprimer_liste(liste *l)
 {
-  //libère la mémoire utilisée par la liste
-  //vous pouvez utiliser valgrind pour vérifier que vous avez bien tout libéré
+  //libï¿½re la mï¿½moire utilisï¿½e par la liste
+  //vous pouvez utiliser valgrind pour vï¿½rifier que vous avez bien tout libï¿½rï¿½
 
 }
 
 liste* separation(liste *l)
 {
-  //sépare l en deux listes de même taille (+/- un élément)
-  //une de ces listes est retournée par la fonction, l'autre et la liste l modifiée
+  //sï¿½pare l en deux listes de mï¿½me taille (+/- un ï¿½lï¿½ment)
+  //une de ces listes est retournï¿½e par la fonction, l'autre et la liste l modifiï¿½e
 
 }
 
 liste* fusion(liste *l1, liste *l2)
 {
-  //fusionne les listes triées l1 et l2 en une seule retournée par la fonction
+  //fusionne les listes triï¿½es l1 et l2 en une seule retournï¿½e par la fonction
 
 }
 
 liste* tri_fusion(liste *l)
 {
   /*
-  //algorithme de tri fusion qui sépare la liste en deux, tri récursivement chacune des listes et les fusionne
+  //algorithme de tri fusion qui sï¿½pare la liste en deux, tri rï¿½cursivement chacune des listes et les fusionne
   liste liste2;
   
   //liste2 = initialise(
@@ -73,7 +74,7 @@ liste* tri_fusion(liste *l)
 
 int main (int argc, char *argv[])
 {
-  //initialisation du générateur de nombres aléatoires
+  //initialisation du gï¿½nï¿½rateur de nombres alï¿½atoires
   srand(time(NULL));
   //variables pour mesurer le temps
   long clk_tck = CLOCKS_PER_SEC;
@@ -82,7 +83,7 @@ int main (int argc, char *argv[])
   t1 = clock();
   //le calcul dont on veut mesurer le temps
   //liste2 = tri_fusion(liste);
-  //heure après le calcul
+  //heure aprï¿½s le calcul
   t2 = clock();
   (void)printf("Nb ticks/seconde = %ld,  Nb ticks depart : %ld, "
 	       "Nb ticks final : %ld\n",
